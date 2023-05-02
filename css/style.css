@@ -355,7 +355,7 @@ ABOUT SECTION
     color: var(--clr-green-10);
     text-transform: capitalize;
     font-size: 20px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 .about-info h1{
     font-size: 30px;
@@ -372,6 +372,27 @@ ABOUT SECTION
     margin-bottom: 8em;
     font-size: 14px;
     padding: 0.5rem;
+}
+
+/* @MEDIA QUERY */
+@media (max-width: 420px){
+    .about-img-container{
+        width: 360px;
+        height: 280px;
+        margin: 3rem 1rem;
+    }
+    .about img{
+        width: 360px;
+        height: 280px;
+        transition: all 0.3s;
+    }
+    .about-center{
+        padding-left: 1.5rem;
+    }
+    .about-info p{
+        line-height: 1.25rem;
+        font-size: 14px;
+    }
 }
 
 /* @MEDIA QUERY */
@@ -470,7 +491,7 @@ OUR PRODUCTS SECTION
 
 .our-products-cards img{
     margin: 1.5rem 0;
-    border-radius: 5%;
+    border-radius: 2%;
     width: 420px;
     height: 300px;
     transition: all 0.3s;
@@ -487,6 +508,32 @@ OUR PRODUCTS SECTION
 .products-info span{
     color: var(--clr-green-10);
 }
+
+/* @MEDIA QUERY */
+@media (max-width: 420px){
+
+    .our-products-info{
+        padding-left: 1.5rem;
+    }
+    .our-products-info p{
+        max-width: 22em;
+        line-height: 1.25rem;
+    }
+    .our-products-info .btn{
+        margin-bottom: 3em;
+    }
+    .our-products-center{
+        padding-left: 4rem;
+    }
+    .our-products-cards img{
+        margin: 1.5rem 0;
+        border-radius: 5%;
+        width: 420px;
+        height: 280px;
+    }
+    
+}
+
 
 /* @MEDIA QUERY */
 @media (max-width: 768px){
@@ -572,7 +619,6 @@ OUR PRODUCTS SECTION
 OUR SERVICES SECTION
 =====================*/
 
-
 .our-services-info{
     text-align: center;
 }
@@ -599,7 +645,7 @@ OUR SERVICES SECTION
     width: 420px;
     height: 540px;
     margin: 1rem 1.5rem;
-    border-radius: 5%;
+    border-radius: 2%;
     background: #c1bfbf43;
     transition: all 0.3s;
     box-shadow: 0px 2px 5px grey;
@@ -612,8 +658,8 @@ OUR SERVICES SECTION
 .our-services-cards img{
     width: 420px;
     height: 280px;
-    border-top-right-radius: 5%;
-    border-top-left-radius: 5%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
 }
 .services-info{
     text-align: center;
@@ -660,6 +706,21 @@ OUR SERVICES SECTION
 .services-info .btn:hover{
     color: var(--clr-green-10);
     background: rgb(115, 240, 115);
+}
+
+/* @MEDIA QUERY */
+@media (max-width: 420px){
+    .our-services-cards{
+        width: 340px;
+        height: 510px;
+    }
+    .our-services-cards img{
+        width: 340px;
+        height: 270px;
+    }
+    .services-info p{
+        max-width: 20em;
+    }
 }
 
 /* @MEDIA QUERY */
@@ -799,14 +860,14 @@ FOOTER SECTION
     margin-top: 0.5rem;
 }
 
-.footer-center a ion-icon{
+.footer-center ion-icon{
     color: #fff;
     font-size: 35px;
     margin: 1rem 0.5rem;
     text-decoration: none;
     transition: all 0.3s;
 }
-.footer-center a ion-icon:hover{
+.footer-center ion-icon:hover{
     color: var(--clr-green-10);
     transform: translateY(-10px);
 }
@@ -814,4 +875,11 @@ FOOTER SECTION
 #creator{
     text-transform: uppercase;
     color: var(--clr-green-10);
+}
+
+/* @MEDIA QUERY */
+@media (max-width: 420px){
+    .footer-center{
+        padding: 2rem;
+    }
 }
