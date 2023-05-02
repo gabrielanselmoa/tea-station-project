@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Station</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- END ICONS -->
+
+</head>
+<body>
+    <!-- NAVBAR BTN-->
+    <span class="nav-btn" id="nav-btn">
+        <ion-icon name="menu" onclick="clickMenu()"></ion-icon>
+    </span>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-header">
+            <span class="nav-close" id="nav-close">
+                <ion-icon name="power" onclick="clickClose()"></ion-icon>
+            </span>
+        </div>
+        <!-- MENU ITEMS -->
+        <ul class="nav-items" id="items">
+            <li><a href="index.html" class="nav-link">home</a></li>
+            <li><a href="skills.html" class="nav-link">skills</a></li>
+            <li><a href="about.html" class="nav-link">about</a></li>
+            <li><a href="products.html" class="nav-link">products</a></li>
+            <li><a href="services.html" class="nav-link">services</a></li>
+        </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- BANNER SECTION -->
+    <header>
+        <div class="banner">
+            <div class="banner-center">
+                <div class="banner-info">
+                    <h4>over one hundred flavors of</h4>
+                    <h1>specially crafted tea</h1>
+                    <button class="btn">explore</button>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- END BANNER SECTION -->
+
+<!-- CONTENT DIVIDER -->
+    <div class="content-divider"></div>
+<!-- CONTENT DIVIDER -->
+
+    <!-- ABOUT US SECTION -->
+    <section>
+        <article>
+            <div class="about">
+                <div class="about-img-container">
+                    <span>
+                        <img src="./images/about-bcg.jpeg" alt="tea station">
+                    </span>
+                </div>
+                <div class="about-center">
+                    <div class="about-info">
+                        <h4>about our</h4>
+                        <h1>tea station</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta laborum rem eos quos! Sit, necessitatibus?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta laborum rem eos quos! Sit, necessitatibus?</p>
+                        <button class="btn">learn more</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+<!-- END ABOUT US SECTION -->
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-center">
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/gabriel-anselmo-b69bb0247/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+    
+            <a href="https://github.com/gabrielanselmoa" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/gabriel-anselmo-b69bb0247/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <p>&copy2023 <span id="creator">gabriel anselmo</span> all rights reserved</p>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+<!-- JS SECTION -->
+<script>
+
+function clickMenu(){
+    if (navbar.style.display == 'none'){     
+        navbar.style.display='block'
+    } 
+    else{
+        navbar.style.display='block'
+    }
+}
+function clickClose(){
+    if (navbar.style.display == 'block'){     
+        navbar.style.display='none'
+    } 
+    else{
+        navbar.style.display='none'
+    }
+}
+
+</script>
